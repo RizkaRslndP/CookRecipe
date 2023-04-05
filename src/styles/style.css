@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
 
 html {
   scroll-behavior: smooth;
@@ -6,7 +6,7 @@ html {
 }
 
 body {
-  font-family: 'Libre Baskerville', serif;
+  font-family: 'Quicksand', sans-serif;
   background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
 }
 
@@ -20,23 +20,37 @@ main {
 }
 
 .banner {
-  background-image: url(../img/banner.png);
+  background-image: url(../public/images/banner.png);
   background-repeat: no-repeat;
   background-size: cover;
   height: 650px;
   max-width: 100%;
 }
 
+.category-container {
+  margin: 1rem;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  margin: 40px;
+  color: #996F27;
+}
+
 h3 {
   text-align: center;
   padding: 30px;
-  font-family: 'Libre Baskerville', serif;
+  font-family: 'Quicksand', sans-serif;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1280px) {
   .banner {
     margin: 0rem;
-    height: 800px;
+    height: 630px;
     width: auto;
     filter: none;
     transform: none;
@@ -77,23 +91,22 @@ h3 {
   }
 }
 
-h1 {
-  text-align: center;
-}
-
-h2 {
-  text-align: center;
-  margin: 40px;
-  color: white;
-}
-
-.category-container {
-  margin: 1rem;
-}
-
 #meal {
   display: block;
   width: auto;
   height: 400px;
   overflow: auto;
+}
+
+.copyright {
+  text-align: center;
+}
+
+.copyright a {
+  text-decoration: none;
+  color: black;
+}
+
+.copyright a:hover {
+  color: #996F27;
 }

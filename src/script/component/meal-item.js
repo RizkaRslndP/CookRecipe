@@ -58,7 +58,13 @@ class MealItem extends HTMLElement {
       }
       
       .long-copy span {
-        color: #706897;
+        color: #996F27;
+      }
+
+      hr {
+        height: 2px;
+        border: none;
+        background: rgba(255,207,139,1);
       }
       </style>
       <div class="meal-info">

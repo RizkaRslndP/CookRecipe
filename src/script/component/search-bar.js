@@ -22,12 +22,12 @@ class SearchBar extends HTMLElement {
       <style>
       .search-title {
         align-items: center;
-        font-size: 20px;
+        font-size: 24px;
         font-weight: bold;
-        margin-bottom: 15px;
+        margin-bottom: 50px;
         margin-top: 15px;
         text-align: center;
-        color: white;
+        color: #996F27;
       }
       
       .search-container {
@@ -36,7 +36,7 @@ class SearchBar extends HTMLElement {
         align-items: center;
         margin: auto;
         position: absolute;
-        font-family: 'Libre Baskerville', serif;
+        font-family: 'Quicksand', sans-serif;
         max-width: auto;
         top: 50%;
         left: 25%;
@@ -49,25 +49,33 @@ class SearchBar extends HTMLElement {
         border: none;
         box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
         font-size: 14px;
-        font-family: 'Libre Baskerville', serif;
+        font-family: 'Quicksand', sans-serif;
+        color: #996F27;
         width: 400px;
         margin-right: 10px;
       }
       
       #searchButtonElement {
+        display: inline-block;
         padding: 10px 20px;
         border-radius: 5px;
         border: none;
-        background-color: #706897;
+        background-color: #996F27;
         color: #fff;
         font-size: 14px;
-        font-family: 'Libre Baskerville', serif;
+        font-family: 'Quicksand', sans-serif;
         cursor: pointer;
-        transition: background-color 0.3s ease;
+        transition: all 0.3s ease;
       }
       
       #searchButtonElement:hover {
-        background-color: #443e63;
+        background-color: #BD8729;
+      }
+
+      #searchButtonElement:active {
+        background-color: #BD8729;
+        transform: translateY(4px);
+        box-shadow: none;
       }
 
       @media (max-width: 800px) {
@@ -92,6 +100,7 @@ class SearchBar extends HTMLElement {
           transform: translate(-50%);
         }
         #searchButtonElement {
+          display: inline-block;
           position: absolute;
           top: 120%;
           left: 50%;

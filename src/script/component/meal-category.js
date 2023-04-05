@@ -32,9 +32,10 @@ class MealCategory extends HTMLElement {
           width: 100px;
           height: 100px;
           margin: 10px 10px;
-          background: #706897;
+          background: #FFC96B;
           border-radius: 10px;
-          box-shadow: 0px 0px 10px black;
+          cursor: pointer;
+          box-shadow: 10px 10px 10px #9e8354;
         }
 
         .category-card:hover {
@@ -53,6 +54,17 @@ class MealCategory extends HTMLElement {
           font-size: 15px;
           margin-bottom: 10px;
           text-align: center;
+          color: #996F27;
+        }
+
+        @media (max-width: 360px) {
+          .category-card {
+            padding: 10px;
+            width: 90px;
+            height: 100px;
+            margin: 10px 10px;
+            border-radius: 10px;
+          }
         }
 
 

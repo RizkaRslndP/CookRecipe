@@ -101,7 +101,17 @@ class MealCategory extends HTMLElement {
             .join("");
           this.shadowRoot.innerHTML = mealCards;
         } else {
-          // tampilkan pesan atau tindakan yang sesuai jika category bernilai null
+          Swal.fire({
+            icon: "info",
+            title: "Cook Recipe not found!",
+            text: "Sorry, this recipe category has not been activated.",
+            showClass: {
+              popup: "animate__animated animate__fadeInDown",
+            },
+            hideClass: {
+              popup: "animate__animated animate__fadeOutUp",
+            },
+          });
         }
       });
     });

@@ -148,7 +148,7 @@ class FooterContact extends HTMLElement {
           <li><a href="https://www.linkedin.com/in/rizka-rosalinda-pratiwi-7716b11b7/" target="_blank"><img src="https://img.icons8.com/plasticine/100/null/linkedin.png" alt="LinkedIn"></a></li>
         </ul>
       </div>
-        <form class="email-form" action="#" method="post">
+        <form class="email-form" action="#" method="post onsubmit="showAlert(event)">
           <h3>Contact Us</h3>
           <input type="email" name="email" placeholder="Your email address" required>
           <textarea name="message" placeholder="Your message" required></textarea>
@@ -158,6 +158,22 @@ class FooterContact extends HTMLElement {
       </div>
       `;
     this.shadowRoot.innerHTML = FooterContact;
+    this.form = this.shadowRoot.querySelector(".email-form");
+    this.form.addEventListener("submit", this.showAlert.bind(this));
+  }
+  showAlert(event) {
+    event.preventDefault();
+    Swal.fire({
+      icon: "info",
+      title: "Message not sent!",
+      text: "Sorry, you can't send messages at this time.",
+      showClass: {
+        popup: "animate__animated animate__fadeInDown",
+      },
+      hideClass: {
+        popup: "animate__animated animate__fadeOutUp",
+      },
+    });
   }
 }
 

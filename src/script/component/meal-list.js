@@ -41,17 +41,17 @@ class MealList extends HTMLElement {
   }
 
   renderError(message) {
-    this.shadowDOM.innerHTML = `
-        <style>
-             .placeholder {
-                   color: #ff6b6b;
-                   -webkit-user-select: none;
-                   -moz-user-select: none;
-                   -ms-user-select: none;
-                   user-select: none;
-               }
-           </style> `;
-    this.shadowDOM.innerHTML += `<h2 class="placeholder">${message}</h2>`;
+    Swal.fire({
+      icon: "error",
+      title: "Cook Recipe not found!",
+      text: "Sorry, there was a typo error. Please type correctly.",
+      showClass: {
+        popup: "animate__animated animate__fadeInDown",
+      },
+      hideClass: {
+        popup: "animate__animated animate__fadeOutUp",
+      },
+    });
   }
 }
 

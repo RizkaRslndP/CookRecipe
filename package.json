@@ -25,7 +25,8 @@
   "dependencies": {
     "jquerry": "^0.0.1-security",
     "jquery": "^3.6.4",
-    "regenerator-runtime": "^0.13.11"
+    "regenerator-runtime": "^0.13.11",
+    "sweetalert2": "^11.7.3"
   },
   "keywords": []
 }

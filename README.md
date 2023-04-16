@@ -1,2 +1,2 @@
 # CookRecipe
-Submission Dicoding
+Cook Recipe - Cook Recipe Finder
